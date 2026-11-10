@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа — BookShop</title>
+    <meta name="description" content="Форма оформления покупки книг в интернет-магазине BookShop. Быстрое заполнение данных.">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <span class="logo">BookShop</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Каталог</a></li>
+                <li><a href="checkout.html">Заказ</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Оформление заказа</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Контактные данные покупателя</legend>
+                <p>
+                    <label for="customer-name">Ваше имя и фамилия:</label>
+                    <input type="text" id="customer-name" name="name" required>
+                </p>
+                <p>
+                    <label for="customer-email">Электронная почта (Email):</label>
+                    <input type="email" id="customer-email" name="email" required>
+                </p>
+                <p>
+                    <label for="customer-phone">Номер телефона:</label>
+                    <input type="tel" id="customer-phone" name="phone" required>
+                </p>
+                <p>
+                    <label for="delivery-address">Адрес доставки:</label>
+                    <input type="text" id="delivery-address" name="address" required>
+                </p>
+                <p>
+                    <label for="order-comment">Комментарий к заказу:</label>
+                    <textarea id="order-comment" name="comment" rows="4" cols="40"></textarea>
+                </p>
+                <button type="submit">Подтвердить заказ</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Книжный магазин BookShop. Все права защищены.</p>
+    </footer>
+</body>
+</html>
